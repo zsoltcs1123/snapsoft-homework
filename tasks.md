@@ -4,16 +4,16 @@
 
 Build an event-driven AWS pipeline (Terraform + Lambda) that preprocesses second-hand car sales data from a landing S3 bucket into a curated S3 bucket, then train and evaluate an sklearn model in a Jupyter notebook that slightly underestimates car prices.
 
-| # | Task | Depends on | Status |
-| --- | --- | --- | --- |
-| 1 | Set up project repository and tooling | None | DONE |
-| 2 | Set up AWS account and credentials | None | Pending |
-| 3 | Explore and document the dataset | None | Pending |
-| 4 | Write the Lambda preprocessing script | 3 | Pending |
-| 5 | Author the Terraform infrastructure | 4 | Pending |
-| 6 | Deploy and validate the pipeline | 2, 5 | Pending |
-| 7 | Build the ML training and evaluation notebook | 3, 6 | Pending |
-| 8 | Write the README and package deliverables | 5, 6, 7 | Pending |
+| #   | Task                                          | Depends on | Status  |
+| --- | --------------------------------------------- | ---------- | ------- |
+| 1   | Set up project repository and tooling         | None       | DONE    |
+| 2   | Set up AWS account and credentials            | None       | DONE    |
+| 3   | Explore and document the dataset              | None       | DONE    |
+| 4   | Write the Lambda preprocessing script         | 3          | Pending |
+| 5   | Author the Terraform infrastructure           | 4          | Pending |
+| 6   | Deploy and validate the pipeline              | 2, 5       | Pending |
+| 7   | Build the ML training and evaluation notebook | 3, 6       | Pending |
+| 8   | Write the README and package deliverables     | 5, 6, 7    | Pending |
 
 ## Tasks
 
