@@ -32,3 +32,6 @@ Desktop.ini
 *.pem
 
 AI_Homework_SnapSoft.pdf
+
+# Local working files
+curated_output.csv
