@@ -1,0 +1,45 @@
+# Homework
+
+## AI&MLserviceline
+
+YouareworkingasaprofessionalITconsultantforacompanysellingsecond-handcars.The
+companywouldliketoimproveitsinternalservicesbyusingamodeltoestimatethepotential
+selling price of thecar inadvance. They requestyoutoimplementasolution usingAWS
+services.
+
+Thecompanyprovidesdata onits previoussales( _sample_input.csv_ ).Thisdatasetincludes
+attributesofthecar,thecustomer,thedealership,etc.
+They havealreadyestablishedadataflow, basedonwhichrawdataisuploadedtoanS
+bucket (landing zone). Note that the target S3 bucket of the data flow is dynamically
+configurable,soyoucandeployyourownS3bucketaspartoftheproject. Later,thecompany
+mightupdatetheimplementeddataflowsothatitpointstoyourS3bucket.
+
+Youneedtoimplementanevent-drivenprocesssothat.csvfilesuploadedtotheS3bucketare
+automaticallypreprocessedbya serviceandloaded intoanotherS3bucket(curatedzone).
+Pleasemakesurethattheprocesstransformstheinputfilesasfollows:
+
+```
+● deleteattributesthatcannotbeusedfortrainingthemachinelearningmodel;
+● deleterowsthataremissingsignificantattributese.g.thetypeofthecar;
+● donotdeleterowsthataremissingattributesthatcanbeimputed.
+```
+
+As the company prefers serverless technology, you canuse an AWS Lambda functionto
+implementthe process.Youmightuse asuitablePython runtime.Fordataprocessing,you
+mightcreateacustomLambdalayeroruseAWS’smanagedlayertohavePandas.
+
+After creating this pipeline, the company wouldlike to see the benefits of using machine
+learning.Theywantyoutocreateanotebookthattakesthedatafromthecuratedzone,trainsa
+modelofyourchoice,andevaluatesit.Sincethecompanywantstosellitscurrentinventoryas
+soonaspossible,theywouldpreferamodelthatslightlyunderestimatestheprice.Youmight
+useansklearncompatibleframeworktoimplementyourmodel.
+
+Composeazipfilecontainingthefollowingdeliverables:
+
+```
+● Terraformfiles (tf)definingthearchitecture
+● Pythonscript definingthelambdafunction
+● Notebook definingthetrainingandevaluationofmodels
+● Readme specifyingthedetailsoftheterraformcommandstobeexecutedtodeploythe
+architecture
+```
