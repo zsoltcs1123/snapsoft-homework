@@ -9,7 +9,7 @@ Build an event-driven AWS pipeline (Terraform + Lambda) that preprocesses second
 | 1   | Set up project repository and tooling         | None       | DONE    |
 | 2   | Set up AWS account and credentials            | None       | DONE    |
 | 3   | Explore and document the dataset              | None       | DONE    |
-| 4   | Write the Lambda preprocessing script         | 3          | Pending |
+| 4   | Write the Lambda preprocessing script         | 3          | DONE    |
 | 5   | Author the Terraform infrastructure           | 4          | Pending |
 | 6   | Deploy and validate the pipeline              | 2, 5       | Pending |
 | 7   | Build the ML training and evaluation notebook | 3, 6       | Pending |

@@ -28,6 +28,7 @@ The dataset file is found at `ml_sample_data_snapsoft.csv` (491 rows + header).
   - all acceptance criteria are met
   - all verification scenarios are met
   - an accompanying note is created in `docs` explaining the decisions and the implementation so the user can reason about it in an interview setting
+  - any additional documentation is created if needed
 
 ## Deliverables (zip)
 
