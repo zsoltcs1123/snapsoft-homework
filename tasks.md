@@ -13,7 +13,7 @@ Build an event-driven AWS pipeline (Terraform + Lambda) that preprocesses second
 | 5   | Author the Terraform infrastructure           | 4          | DONE    |
 | 6   | Deploy and validate the pipeline              | 2, 5       | DONE    |
 | 7   | Build the ML training and evaluation notebook | 3, 6       | DONE    |
-| 8   | Write the README and package deliverables     | 5, 6, 7    | Pending |
+| 8   | Write the README and package deliverables     | 5, 6, 7    | DONE    |
 
 ## Tasks
 
